@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://WSEmpleado/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://WSEmpleado/">
+
+<xs:element name="agregarEmpleado" type="tns:agregarEmpleado"/>
+
+<xs:element name="agregarEmpleadoResponse" type="tns:agregarEmpleadoResponse"/>
+
+<xs:element name="autorizacion" type="tns:autorizacion"/>
+
+<xs:element name="autorizacionResponse" type="tns:autorizacionResponse"/>
+
+<xs:element name="buscarPorID" type="tns:buscarPorID"/>
+
+<xs:element name="buscarPorIDResponse" type="tns:buscarPorIDResponse"/>
+
+<xs:element name="buscarTodos" type="tns:buscarTodos"/>
+
+<xs:element name="buscarTodosResponse" type="tns:buscarTodosResponse"/>
+
+<xs:element name="editar" type="tns:editar"/>
+
+<xs:element name="editarResponse" type="tns:editarResponse"/>
+
+<xs:element name="eliminar" type="tns:eliminar"/>
+
+<xs:element name="eliminarResponse" type="tns:eliminarResponse"/>
+
+<xs:element name="login" type="tns:login"/>
+
+<xs:element name="loginResponse" type="tns:loginResponse"/>
+
+<xs:complexType name="login">
+<xs:sequence>
+<xs:element name="codigoEmpleado" type="xs:long"/>
+<xs:element name="contraseña" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="loginResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:empleado" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="empleado">
+<xs:sequence>
+<xs:element name="codigoEmpleado" type="xs:long"/>
+<xs:element name="contraseña" type="xs:string" minOccurs="0"/>
+<xs:element name="idEmpleado" type="xs:int"/>
+<xs:element name="nombre" type="xs:string" minOccurs="0"/>
+<xs:element name="puesto" type="xs:string" minOccurs="0"/>
+<xs:element name="rol" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscarTodos">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="buscarTodosResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:empleado" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="eliminar">
+<xs:sequence>
+<xs:element name="id" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="eliminarResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscarPorID">
+<xs:sequence>
+<xs:element name="id" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscarPorIDResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:empleado" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editar">
+<xs:sequence>
+<xs:element name="nombre" type="xs:string" minOccurs="0"/>
+<xs:element name="codigo" type="xs:long"/>
+<xs:element name="rol" type="xs:string" minOccurs="0"/>
+<xs:element name="puesto" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editarResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="agregarEmpleado">
+<xs:sequence>
+<xs:element name="nombre" type="xs:string" minOccurs="0"/>
+<xs:element name="codigo" type="xs:long" minOccurs="0"/>
+<xs:element name="rol" type="xs:string" minOccurs="0"/>
+<xs:element name="contraseña" type="xs:string" minOccurs="0"/>
+<xs:element name="puesto" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="agregarEmpleadoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="autorizacion">
+<xs:sequence>
+<xs:element name="codigo" type="xs:long"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="autorizacionResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:long" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://WSTienda/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://WSTienda/">
+
+<xs:element name="agregar" type="tns:agregar"/>
+
+<xs:element name="agregarResponse" type="tns:agregarResponse"/>
+
+<xs:element name="buscarFecha" type="tns:buscarFecha"/>
+
+<xs:element name="buscarFechaResponse" type="tns:buscarFechaResponse"/>
+
+<xs:element name="editar" type="tns:editar"/>
+
+<xs:element name="editarResponse" type="tns:editarResponse"/>
+
+<xs:complexType name="editar">
+<xs:sequence>
+<xs:element name="fecha" type="xs:string" minOccurs="0"/>
+<xs:element name="efectivo" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editarResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscarFecha">
+<xs:sequence>
+<xs:element name="fecha" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscarFechaResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:tienda" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="tienda">
+<xs:sequence>
+<xs:element name="fecha" type="xs:string" minOccurs="0"/>
+<xs:element name="idBalanceTienda" type="xs:int"/>
+<xs:element name="totalEfectivo" type="xs:double"/>
+<xs:element name="totalTarjetaBancaria" type="xs:long"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="agregar">
+<xs:sequence>
+<xs:element name="fecha" type="xs:string" minOccurs="0"/>
+<xs:element name="efectivo" type="xs:long"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="agregarResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

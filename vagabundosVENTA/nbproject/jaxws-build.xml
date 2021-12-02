@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+        *** GENERATED FROM jax-ws.xml - DO NOT EDIT !                             ***
+        *** TO MODIFY wsimport options USE Web Service node -> Edit WS Attributes ***
+        *** TO CHANGE TARGETS GENERATED TO jaxws-build.xml COPY THOSE             ***
+        *** TARGETS TO ../build.xml AND MODIFY THAT FILE INSTEAD                  ***
+
+        --><project xmlns:xalan="http://xml.apache.org/xslt" xmlns:j2seproject3="http://www.netbeans.org/ns/j2se-project/3" xmlns:jaxws="http://www.netbeans.org/ns/jax-ws/1">
+    <!--
+                ===================
+                JAX-WS WSIMPORT SECTION
+                ===================
+            -->
+    <target name="wsimport-init" depends="init">
+        <mkdir dir="${build.generated.sources.dir}/jax-ws"/>
+        <taskdef name="wsimport" classname="com.sun.tools.ws.ant.WsImport">
+            <classpath path="${libs.jaxws21.classpath}"/>
+        </taskdef>
+    </target>
+    <target name="wsimport-client-UsuarioWS" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/UsuarioWS"/>
+        <property name="wsdl-UsuarioWS" location="xml-resources/web-service-references/UsuarioWS/wsdl/localhost_8080/vagabundosWS/UsuarioWS.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/UsuarioWS" destdir="${build.generated.dir}/jax-wsCache/UsuarioWS" wsdl="${wsdl-UsuarioWS}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/vagabundosWS/UsuarioWS?WSDL" xnocompile="true" xendorsed="true" package="UsuarioWS">
+            <depends file="${wsdl-UsuarioWS}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/UsuarioWS"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/UsuarioWS">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-UsuarioWS" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/UsuarioWS"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/UsuarioWS"/>
+    </target>
+    <target name="wsimport-client-ProductoVendidoWS" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/ProductoVendidoWS"/>
+        <property name="wsdl-ProductoVendidoWS" location="xml-resources/web-service-references/ProductoVendidoWS/wsdl/localhost_8080/vagabundosWS/ProductoVendidoWS.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/ProductoVendidoWS" destdir="${build.generated.dir}/jax-wsCache/ProductoVendidoWS" wsdl="${wsdl-ProductoVendidoWS}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/vagabundosWS/ProductoVendidoWS?WSDL" xnocompile="true" xendorsed="true" package="ProductoVendidoWS">
+            <depends file="${wsdl-ProductoVendidoWS}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/ProductoVendidoWS"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/ProductoVendidoWS">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-ProductoVendidoWS" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/ProductoVendidoWS"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/ProductoVendidoWS"/>
+    </target>
+    <target name="wsimport-client-ProductoWS" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/ProductoWS"/>
+        <property name="wsdl-ProductoWS" location="xml-resources/web-service-references/ProductoWS/wsdl/localhost_8080/vagabundosWS/ProductoWS.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/ProductoWS" destdir="${build.generated.dir}/jax-wsCache/ProductoWS" wsdl="${wsdl-ProductoWS}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/vagabundosWS/ProductoWS?WSDL" xnocompile="true" xendorsed="true" package="ProductoWS">
+            <depends file="${wsdl-ProductoWS}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/ProductoWS"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/ProductoWS">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-ProductoWS" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/ProductoWS"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/ProductoWS"/>
+    </target>
+    <target name="wsimport-client-WSBalanceEmpleado" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/WSBalanceEmpleado"/>
+        <property name="wsdl-WSBalanceEmpleado" location="xml-resources/web-service-references/WSBalanceEmpleado/wsdl/localhost_8080/vagabundosWS/WSBalanceEmpleado.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/WSBalanceEmpleado" destdir="${build.generated.dir}/jax-wsCache/WSBalanceEmpleado" wsdl="${wsdl-WSBalanceEmpleado}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/vagabundosWS/WSBalanceEmpleado?WSDL" xnocompile="true" xendorsed="true" package="WSBalanceEmpleado">
+            <depends file="${wsdl-WSBalanceEmpleado}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/WSBalanceEmpleado"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/WSBalanceEmpleado">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-WSBalanceEmpleado" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/WSBalanceEmpleado"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/WSBalanceEmpleado"/>
+    </target>
+    <target name="wsimport-client-EmpleadoWS" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/EmpleadoWS"/>
+        <property name="wsdl-EmpleadoWS" location="xml-resources/web-service-references/EmpleadoWS/wsdl/localhost_8080/vagabundosWS/EmpleadoWS.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/EmpleadoWS" destdir="${build.generated.dir}/jax-wsCache/EmpleadoWS" wsdl="${wsdl-EmpleadoWS}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/vagabundosWS/EmpleadoWS?WSDL" xnocompile="true" xendorsed="true" package="EmpleadoWS">
+            <depends file="${wsdl-EmpleadoWS}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/EmpleadoWS"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/EmpleadoWS">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-EmpleadoWS" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/EmpleadoWS"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/EmpleadoWS"/>
+    </target>
+    <target name="wsimport-client-BalanceTiendaWS" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/BalanceTiendaWS"/>
+        <property name="wsdl-BalanceTiendaWS" location="xml-resources/web-service-references/BalanceTiendaWS/wsdl/localhost_8080/vagabundosWS/BalanceTiendaWS.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/BalanceTiendaWS" destdir="${build.generated.dir}/jax-wsCache/BalanceTiendaWS" wsdl="${wsdl-BalanceTiendaWS}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/vagabundosWS/BalanceTiendaWS?WSDL" xnocompile="true" xendorsed="true" package="BalanceTiendaWS">
+            <depends file="${wsdl-BalanceTiendaWS}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/BalanceTiendaWS"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/BalanceTiendaWS">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-BalanceTiendaWS" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/BalanceTiendaWS"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/BalanceTiendaWS"/>
+    </target>
+    <target name="wsimport-client-TicketWS" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/TicketWS"/>
+        <property name="wsdl-TicketWS" location="xml-resources/web-service-references/TicketWS/wsdl/localhost_8080/vagabundosWS/TicketWS.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/TicketWS" destdir="${build.generated.dir}/jax-wsCache/TicketWS" wsdl="${wsdl-TicketWS}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/vagabundosWS/TicketWS?WSDL" xnocompile="true" xendorsed="true" package="wsticket">
+            <depends file="${wsdl-TicketWS}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/TicketWS"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/TicketWS">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-TicketWS" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/TicketWS"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/wsticket"/>
+    </target>
+    <target name="wsimport-client-generate" depends="wsimport-client-UsuarioWS, wsimport-client-ProductoVendidoWS, wsimport-client-ProductoWS, wsimport-client-WSBalanceEmpleado, wsimport-client-EmpleadoWS, wsimport-client-BalanceTiendaWS, wsimport-client-TicketWS"/>
+</project>

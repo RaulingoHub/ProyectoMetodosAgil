@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://WSBalanceEmpleado/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://WSBalanceEmpleado/">
+
+<xs:element name="agregarBalance" type="tns:agregarBalance"/>
+
+<xs:element name="agregarBalanceResponse" type="tns:agregarBalanceResponse"/>
+
+<xs:element name="buscarIDFecha" type="tns:buscarIDFecha"/>
+
+<xs:element name="buscarIDFechaResponse" type="tns:buscarIDFechaResponse"/>
+
+<xs:element name="editar" type="tns:editar"/>
+
+<xs:element name="editarResponse" type="tns:editarResponse"/>
+
+<xs:element name="hello" type="tns:hello"/>
+
+<xs:element name="helloResponse" type="tns:helloResponse"/>
+
+<xs:complexType name="hello">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="helloResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editar">
+<xs:sequence>
+<xs:element name="idEmpleado" type="xs:int"/>
+<xs:element name="EfectivoEntrada" type="xs:double"/>
+<xs:element name="retiro" type="xs:double"/>
+<xs:element name="fecha" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editarResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="agregarBalance">
+<xs:sequence>
+<xs:element name="idEmpleado" type="xs:int"/>
+<xs:element name="EfectivoEntrada" type="xs:double"/>
+<xs:element name="retiro" type="xs:double"/>
+<xs:element name="fecha" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="agregarBalanceResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscarIDFecha">
+<xs:sequence>
+<xs:element name="idEmpleado" type="xs:int"/>
+<xs:element name="fecha" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscarIDFechaResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:balanceEmpleado" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="balanceEmpleado">
+<xs:sequence>
+<xs:element name="efectivoEntrada" type="xs:double"/>
+<xs:element name="fecha" type="xs:string" minOccurs="0"/>
+<xs:element name="idBalance" type="xs:int"/>
+<xs:element name="idEmpleado" type="xs:int"/>
+<xs:element name="retiro" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
