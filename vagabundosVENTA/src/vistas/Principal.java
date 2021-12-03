@@ -14,6 +14,7 @@ import net.sf.jasperreports.engine.JasperFillManager;
 import net.sf.jasperreports.engine.JasperPrint;
 import net.sf.jasperreports.view.JasperViewer;
 import configuracion.DBHelper;
+import javax.swing.JPasswordField;
 
 /**
  *
@@ -261,7 +262,7 @@ public class Principal extends javax.swing.JFrame {
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
 
         try {
-
+JPasswordField codigui = new JPasswordField();
             long codigo = Long.valueOf(JOptionPane.showInputDialog("Ingrese codigo de autorización"));
 
             long codigoA = autorizacion(codigo);
@@ -439,13 +440,13 @@ public class Principal extends javax.swing.JFrame {
 
     private void jMenuItemInventario1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemInventario1ActionPerformed
         try {
-
-            long codigo = Long.valueOf(JOptionPane.showInputDialog("Ingrese codigo de autorización"));
+JPasswordField codigui = new JPasswordField();
+            long codigo = Long.valueOf(JOptionPane.showInputDialog(null,codigui,"Ingrese codigo de autorización"));
 
             long codigoA = autorizacion(codigo);
             if (codigoA > 0) {
 
-                String fecha = String.valueOf(JOptionPane.showInputDialog("Ingrese la fecha, 2021-05-26"));
+                String fecha = String.valueOf(JOptionPane.showInputDialog("Ingrese la fecha, 2021-12-01"));
                 bd.connect();
                 File reporte = new File("src/reportes/ventaPorCajero.jasper");
                 Map parametros = new HashMap();
