@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package entidades;
 
 import java.awt.Component;
@@ -12,8 +8,7 @@ import javax.swing.table.DefaultTableCellRenderer;
 
 /**
  *
- * @author Carlos Soto Pacheco
- * @author Jesus Alberto Rivera Lopez
+ * @author Noelia
  * @author Raul Ernesto Molina Lizarraga
  * @author Sebastian Santana
  */

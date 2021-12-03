@@ -7,7 +7,7 @@ package entidades;
 
 /**
  *
- * @author Carlos Soto Pacheco
+ * @author Raul Lizarraga
  */
 public class Empleado {
     

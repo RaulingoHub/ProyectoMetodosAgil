@@ -10,7 +10,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author Carlos Soto Pacheco
+ * @author Sebastian
  */
 public class RegistrarEmpleado extends javax.swing.JInternalFrame {
 

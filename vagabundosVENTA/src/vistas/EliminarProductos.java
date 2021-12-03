@@ -12,7 +12,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author lopez
+ * @author Noelia
  */
 public class EliminarProductos extends javax.swing.JInternalFrame {
 

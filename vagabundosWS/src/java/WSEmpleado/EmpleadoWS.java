@@ -14,7 +14,7 @@ import negocio.EmpleadoDAOIMP;
 
 /**
  *
- * @author Carlos Soto Pacheco
+ * @author Raul Lizarraga
  */
 @WebService(serviceName = "EmpleadoWS")
 public class EmpleadoWS {

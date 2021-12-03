@@ -11,7 +11,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author Carlos Soto Pacheco
+ * @author Raul Lizarraga
  */
 public class RegistrarProductos extends javax.swing.JInternalFrame {
 

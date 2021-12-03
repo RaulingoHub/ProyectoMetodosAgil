@@ -31,7 +31,7 @@ import wsticket.Ticket;
 
 /**
  *
- * @author Carlos Soto Pacheco
+ * @author Raul Lizarraga
  */
 public class RealizarVenta extends javax.swing.JInternalFrame implements Runnable {
 

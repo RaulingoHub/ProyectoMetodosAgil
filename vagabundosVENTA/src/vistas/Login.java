@@ -11,7 +11,7 @@ import java.awt.event.KeyEvent;
 
 /**
  *
- * @author Carlos Soto Pacheco
+ * @author Sebastian Santana
  */
 public class Login extends javax.swing.JFrame {
 

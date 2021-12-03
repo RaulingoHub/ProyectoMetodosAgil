@@ -9,8 +9,7 @@ package entidades;
 
 /**
  *
- * @author Carlos Soto Pacheco
- * @author Jesus Alberto Rivera Lopez
+ * @author Noelia
  * @author Raul Ernesto Molina Lizarraga
  * @author Sebastian Santana
  */

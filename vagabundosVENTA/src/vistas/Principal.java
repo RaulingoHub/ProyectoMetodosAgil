@@ -18,7 +18,7 @@ import javax.swing.JPasswordField;
 
 /**
  *
- * @author Carlos Soto Pacheco
+ * @author Raul Lizarraga
  */
 public class Principal extends javax.swing.JFrame {
 
