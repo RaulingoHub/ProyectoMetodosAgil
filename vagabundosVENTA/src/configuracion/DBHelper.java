@@ -14,7 +14,7 @@ import java.sql.Statement;
 
 /**
  *
- * @author VINKOs
+ * @author Noelia
  */
 public class DBHelper {
     private String parOp = "?zeroDateTimeBehavior=convertToNull&useSSL=false";
